@@ -57,7 +57,7 @@ export default function Hero() {
         }}
       >
         <p className="eyebrow" style={{ animation: "fadeUp 800ms var(--ease-out-expo) both" }}>
-          The Daños · Formaran Families Present
+          The Daños Family Presents
         </p>
 
         <p
@@ -104,7 +104,7 @@ export default function Hero() {
               textTransform: "uppercase",
             }}
           >
-            An Eighteenth Celebration
+            A Decade and Eight
           </span>
           <span style={{ height: "1px", width: "60px", background: "currentColor" }} />
         </div>
@@ -132,7 +132,7 @@ export default function Hero() {
           }}
         >
           {[
-            { k: "When", v: "04 · VII · MMXXVI" },
+            { k: "When", v: "04 · JULY · 2026" },
             { k: "Time", v: event.timeShort },
             { k: "Where", v: event.venue.name },
           ].map((item) => (

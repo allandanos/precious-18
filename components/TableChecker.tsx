@@ -246,7 +246,7 @@ export default function TableChecker() {
                             color: "var(--silver-dim)",
                           }}
                         >
-                          {m.guest.role ? roleLabel[m.guest.role] : "Guest of the debut"}
+                          {m.guest.role ? roleLabel[m.guest.role] : "Guest of the debutant"}
                         </div>
                       </div>
                       <div style={{ textAlign: "right" }}>

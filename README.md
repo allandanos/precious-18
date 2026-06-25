@@ -1,4 +1,4 @@
-# Precious Allena — An Eighteenth Celebration
+# Precious Allena — A Decade and Eight
 
 Interactive invitation site for Precious Allena's debut on **4 July 2026, 4:00 PM**, at **L'Aquinum Garden, Antipolo**.
 

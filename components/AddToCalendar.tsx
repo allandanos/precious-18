@@ -35,7 +35,7 @@ function buildICS(): string {
     `DTSTAMP:${toICS(new Date())}`,
     `DTSTART:${toICS(start)}`,
     `DTEND:${toICS(end)}`,
-    `SUMMARY:Precious Allena — An Eighteenth Celebration`,
+    `SUMMARY:Precious Allena — A Decade and Eight`,
     `DESCRIPTION:The debut of Precious Allena. Garden formal · Navy, silver, ivory.`,
     `LOCATION:${event.venue.name}, ${event.venue.line2}, ${event.venue.city}`,
     "END:VEVENT",
@@ -53,7 +53,7 @@ function googleUrl(): string {
     )}${pad(d.getUTCMinutes())}${pad(d.getUTCSeconds())}Z`;
   const params = new URLSearchParams({
     action: "TEMPLATE",
-    text: "Precious Allena — An Eighteenth Celebration",
+    text: "Precious Allena — A Decade and Eight",
     dates: `${fmt(start)}/${fmt(end)}`,
     details:
       "The debut of Precious Allena. Garden formal · Navy, silver, ivory.",
@@ -172,7 +172,7 @@ export default function AddToCalendar() {
           <a
             role="menuitem"
             href={`https://calendar.yahoo.com/?title=${encodeURIComponent(
-              "Precious Allena — An Eighteenth Celebration"
+              "Precious Allena — A Decade and Eight"
             )}&st=${new Date(event.dateISO)
               .toISOString()
               .replace(/[-:]/g, "")

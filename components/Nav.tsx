@@ -13,6 +13,7 @@ const links = [
 
 export default function Nav() {
   const [scrolled, setScrolled] = useState(false);
+  const [open, setOpen] = useState(false);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
@@ -21,91 +22,51 @@ export default function Nav() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  useEffect(() => {
+    if (!open) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setOpen(false);
+    };
+    document.addEventListener("keydown", onKey);
+    return () => document.removeEventListener("keydown", onKey);
+  }, [open]);
+
   return (
     <header
-      style={{
-        position: "fixed",
-        top: 0,
-        left: 0,
-        right: 0,
-        zIndex: 50,
-        transition: "background var(--dur-normal) var(--ease-out-expo), border-color var(--dur-normal) var(--ease-out-expo)",
-        background: scrolled
-          ? "color-mix(in oklch, var(--navy-900) 85%, transparent)"
-          : "transparent",
-        backdropFilter: scrolled ? "blur(12px)" : "none",
-        borderBottom: scrolled ? "var(--hairline)" : "1px solid transparent",
-      }}
+      className="site-header"
+      data-scrolled={scrolled}
+      data-open={open}
     >
-      <nav
-        className="shell"
-        aria-label="Primary"
-        style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "space-between",
-          paddingBlock: "1rem",
-          gap: "1.5rem",
-        }}
-      >
+      <nav className="shell site-header__nav" aria-label="Primary">
         <Link
           href="/"
-          style={{
-            fontFamily: "var(--font-script)",
-            fontSize: "1.65rem",
-            color: "var(--champagne)",
-            lineHeight: 1,
-          }}
+          className="site-header__brand"
+          onClick={() => setOpen(false)}
         >
-          Precious
-          <span
-            style={{
-              display: "inline-block",
-              fontFamily: "var(--font-sans)",
-              fontSize: "0.6rem",
-              letterSpacing: "0.42em",
-              color: "var(--silver)",
-              marginLeft: "0.5rem",
-              verticalAlign: "middle",
-              textTransform: "uppercase",
-            }}
-          >
-            · 18
-          </span>
+          Precious @ 18
         </Link>
 
+        <button
+          type="button"
+          className="site-header__toggle"
+          aria-expanded={open}
+          aria-controls="primary-menu"
+          aria-label={open ? "Close menu" : "Open menu"}
+          onClick={() => setOpen((v) => !v)}
+        >
+          <span className="site-header__bars" aria-hidden />
+        </button>
+
         <ul
-          style={{
-            display: "flex",
-            gap: "clamp(1rem, 2.5vw, 2rem)",
-            listStyle: "none",
-            margin: 0,
-            padding: 0,
-            fontFamily: "var(--font-sans)",
-            fontSize: "0.74rem",
-            letterSpacing: "0.22em",
-            textTransform: "uppercase",
-          }}
+          id="primary-menu"
+          className="site-header__menu"
+          data-open={open}
         >
           {links.map((l) => (
             <li key={l.href}>
               <Link
                 href={l.href}
-                style={{
-                  color: "var(--ink-muted-on-navy)",
-                  transition: "color var(--dur-fast) var(--ease-out-expo)",
-                  textDecoration: "none",
-                  borderBottom: "1px solid transparent",
-                  paddingBottom: "2px",
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.color = "var(--champagne)";
-                  e.currentTarget.style.borderBottomColor = "var(--champagne)";
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.color = "var(--ink-muted-on-navy)";
-                  e.currentTarget.style.borderBottomColor = "transparent";
-                }}
+                onClick={() => setOpen(false)}
               >
                 {l.label}
               </Link>

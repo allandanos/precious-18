@@ -2,11 +2,11 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Precious Allena — An Eighteenth Celebration · 4 July 2026",
+  title: "Precious Allena — A Decade and Eight · 4 July 2026",
   description:
     "You are cordially invited to the debut of Precious Allena on the fourth of July, two thousand twenty-six, at L'Aquinum Garden, Antipolo.",
   openGraph: {
-    title: "Precious Allena — An Eighteenth Celebration",
+    title: "Precious Allena — A Decade and Eight",
     description:
       "4 July 2026 · 4:00 PM · L'Aquinum Garden, Antipolo. Find your table, count down the evening, and join us.",
     type: "website",

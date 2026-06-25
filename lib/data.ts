@@ -15,9 +15,9 @@ export interface Guest {
 
 export const event = {
   debutante: "Precious Allena",
-  debutanteScript: "Precious",
+  debutanteScript: "",
   age: 18,
-  title: "An Eighteenth Celebration",
+  title: "A Decade and Eight",
   dateISO: "2026-07-04T16:00:00+08:00",
   endDateISO: "2026-07-04T21:00:00+08:00",
   dateLong: "Saturday, the Fourth of July",
@@ -26,18 +26,19 @@ export const event = {
   timeShort: "4:00 PM — 9:00 PM",
   venue: {
     name: "L'Aquinum Garden",
-    line2: "Antipolo Event Venue",
+    line2: "Bianco Hall · Antipolo Events Venue",
     city: "Antipolo, Rizal",
     /** Generic query embed — refine with an exact address if known. */
     mapsQuery: "L'Aquinum Garden, Antipolo, Rizal",
     mapsLink: "https://www.google.com/maps/search/?api=1&query=L%27Aquinum%20Garden%20Antipolo",
   },
   dressCode: "Garden formal · Navy, silver, ivory",
-  hostLine: "With love from Allan, Annabel & the Daños–Formaran families",
+  hostLine: "With love from Mommy & Daddy, Ace & Aldrich, and the entire Daños family & all our friends",
 } as const;
 
 export const eighteens = {
   roses: [
+    "Crispin Daños",
     "Adam Sanqui",
     "Junior Daños",
     "Derek Baguion",
@@ -54,7 +55,6 @@ export const eighteens = {
     "Cedrick Galvan",
     "Aldrich Daños",
     "Ace Daños",
-    "Crispin Daños",
     "Allan Daños",
   ],
   candles: [

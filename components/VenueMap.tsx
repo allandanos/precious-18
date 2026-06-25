@@ -32,9 +32,9 @@ export default function VenueMap() {
         </div>
 
         <div
+          className="venue-grid"
           style={{
             display: "grid",
-            gridTemplateColumns: "minmax(0, 1.6fr) minmax(0, 1fr)",
             gap: "clamp(1.25rem, 2.5vw, 2rem)",
             alignItems: "stretch",
           }}
@@ -126,7 +126,7 @@ export default function VenueMap() {
                   lineHeight: 1.55,
                 }}
               >
-                Please arrive by 3:30 in the afternoon so we may welcome you
+                Please arrive by 4:00pm in the afternoon so we may welcome you
                 with a glass of something cold before the programme begins.
               </p>
             </div>

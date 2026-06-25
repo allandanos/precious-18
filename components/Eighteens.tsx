@@ -1,4 +1,4 @@
-import { eighteens, eighteensMeta, guests } from "@/lib/data";
+import { eighteens, eighteensMeta } from "@/lib/data";
 import { FloralDivider } from "./Ornament";
 
 const accentToColor: Record<string, string> = {
@@ -7,14 +7,6 @@ const accentToColor: Record<string, string> = {
   navy: "var(--silver)",
   ivory: "var(--ivory-deep)",
 };
-
-function tableOf(name: string): string | null {
-  const g = guests.find(
-    (x) =>
-      x.name.replace(/\./g, "").toLowerCase() === name.replace(/\./g, "").toLowerCase()
-  );
-  return g?.table ?? null;
-}
 
 export default function Eighteens() {
   return (
@@ -39,9 +31,10 @@ export default function Eighteens() {
         </div>
 
         <div
+          className="eighteens-grid"
           style={{
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 280px), 1fr))",
+            gridTemplateColumns: "1fr",
             gap: "clamp(1rem, 2.5vw, 2rem)",
             alignItems: "start",
           }}
@@ -104,62 +97,55 @@ export default function Eighteens() {
                     padding: "0.5rem 0",
                   }}
                 >
-                  {list.map((name, i) => {
-                    const t = tableOf(name);
-                    return (
-                      <li
-                        key={name}
+                  {list.map((name, i) => (
+                    <li
+                      key={name}
+                      style={{
+                        display: "grid",
+                        gridTemplateColumns: "1.8rem 1fr",
+                        gap: "0.75rem",
+                        alignItems: "baseline",
+                        padding: "0.55rem 1.6rem",
+                        borderTop:
+                          i === 0 ? "none" : "1px solid color-mix(in oklch, var(--champagne) 14%, transparent)",
+                        transition: "background var(--dur-fast) var(--ease-out-expo)",
+                      }}
+                    >
+                      <span
                         style={{
-                          display: "grid",
-                          gridTemplateColumns: "1.6rem 1fr auto",
-                          gap: "0.6rem",
-                          alignItems: "baseline",
-                          padding: "0.55rem 1.6rem",
-                          borderTop:
-                            i === 0 ? "none" : "1px solid color-mix(in oklch, var(--champagne) 14%, transparent)",
-                          transition: "background var(--dur-fast) var(--ease-out-expo)",
+                          fontFamily: "var(--font-display)",
+                          color: accent,
+                          fontSize: "0.9rem",
+                          fontVariantNumeric: "tabular-nums",
+                          fontStyle: "italic",
                         }}
                       >
-                        <span
-                          style={{
-                            fontFamily: "var(--font-display)",
-                            color: accent,
-                            fontSize: "0.9rem",
-                            fontVariantNumeric: "tabular-nums",
-                            fontStyle: "italic",
-                          }}
-                        >
-                          {String(i + 1).padStart(2, "0")}
-                        </span>
-                        <span
-                          style={{
-                            fontFamily: "var(--font-serif)",
-                            color: "var(--ivory)",
-                            fontSize: "1.02rem",
-                          }}
-                        >
-                          {name}
-                        </span>
-                        <span
-                          style={{
-                            fontFamily: "var(--font-sans)",
-                            fontSize: "0.6rem",
-                            letterSpacing: "0.2em",
-                            color: "var(--silver-dim)",
-                            textTransform: "uppercase",
-                          }}
-                          title={`${name} · ${t ?? "—"}`}
-                        >
-                          {t ?? ""}
-                        </span>
-                      </li>
-                    );
-                  })}
+                        {String(i + 1).padStart(2, "0")}
+                      </span>
+                      <span
+                        style={{
+                          fontFamily: "var(--font-serif)",
+                          color: "var(--ivory)",
+                          fontSize: "1.05rem",
+                        }}
+                      >
+                        {name}
+                      </span>
+                    </li>
+                  ))}
                 </ol>
               </article>
             );
           })}
         </div>
+
+        <style>{`
+          @media (min-width: 820px) {
+            .eighteens-grid {
+              grid-template-columns: repeat(2, 1fr) !important;
+            }
+          }
+        `}</style>
       </div>
     </section>
   );
