@@ -8,6 +8,7 @@ const links = [
   { href: "/#venue", label: "Venue" },
   { href: "/#eighteens", label: "The 18s" },
   { href: "/#gallery", label: "Gallery" },
+  { href: "/#suppliers", label: "Vendors" },
   { href: "/find-table", label: "Find Your Table" },
 ];
 

@@ -302,3 +302,107 @@ export const guests: Guest[] = [
   { name: "Analyn Padilla", table: "Table 13", role: "Bills" },
   { name: "Rico Nathaniel Venancio", table: "Table 13", role: null },
 ];
+
+export interface Supplier {
+  name: string;
+  /** Roles this supplier handled (some suppliers cover multiple). */
+  roles: string[];
+  contact?: string;
+  facebook?: string;
+  logo?: string;
+  note?: string;
+}
+
+/**
+ * Vendors behind the evening, deduplicated by supplier.
+ * Logos live in /public/suppliers/. Source: suppliers.csv.
+ */
+export const suppliers: Supplier[] = [
+  {
+    name: "L'Aquinum Garden",
+    roles: [
+      "Preparation Venue · Casa Luna",
+      "Reception Venue · Bianco Hall",
+      "Florist",
+      "Venue Styling",
+    ],
+    contact: "Ms. Meg",
+    facebook: "https://www.facebook.com/LAquinumGardenAntipolo",
+    logo: "/suppliers/l-aquinum-garden-antipolo.jpg",
+  },
+  {
+    name: "Abram's Events Catering Services",
+    roles: ["Caterer", "Cake", "Grazing Table"],
+    contact: "Ms. Hazel",
+    facebook: "https://www.facebook.com/abramseventscatering",
+    logo: "/suppliers/abrams-event-catering-services.jpg",
+  },
+  {
+    name: "A and Z Events Management",
+    roles: ["Planner / Coordinator", "Host"],
+    contact: "Ms. Zet Cabuniag",
+    facebook: "https://www.facebook.com/aandzeventsteamph",
+    logo: "/suppliers/a-and-z-events-management.jpg",
+  },
+  {
+    name: "Arabela Gown Rental Antipolo",
+    roles: ["Gowns"],
+    facebook: "https://www.facebook.com/17162828262l161",
+    logo: "/suppliers/arabella-gown-rental-antipolo.jpg",
+  },
+  {
+    name: "Joana D. Make-up Artistry",
+    roles: ["Hair & Make-up"],
+    contact: "Ms. Joana De Leon",
+    facebook: "https://www.facebook.com/joanadeleon.hmua",
+    logo: "/suppliers/joana-de-leon-makeup-artistry.jpg",
+  },
+  {
+    name: "Jath & Yhen Photo Art Works",
+    roles: ["Photo & Video Coverage"],
+    contact: "Ms. Yhen",
+    facebook: "https://www.facebook.com/jathandyhen",
+    logo: "/suppliers/jath-and-yhen-photo-art-wroks.jpg",
+  },
+  {
+    name: "Anyayahan Lights and Sounds",
+    roles: ["Lights & LED Wall"],
+    facebook: "https://www.facebook.com/anyayahanLandS",
+    logo: "/suppliers/anyayahan-lights-and-sounds.jpg",
+  },
+  {
+    name: "MC PrintCrafts",
+    roles: ["DIY Souvenirs", "Mirror Selfie", "Welcome Standee"],
+    contact: "Ms. Mary Ann Joy Aday",
+    facebook: "https://www.facebook.com/mcprintcraftsph",
+    logo: "/suppliers/mc-print-crafts.jpg",
+  },
+  {
+    name: "CAM Photobooth & Services",
+    roles: ["Photobooth"],
+    contact: "Sir Ian Neil A.",
+    facebook: "https://www.facebook.com/camphotoboothservices",
+    logo: "/suppliers/cam-photobooth-services.jpg",
+  },
+  {
+    name: "Tita Cai Daños",
+    roles: ["Prizes for Games"],
+    note: "With love and thanks",
+    facebook: "https://www.facebook.com/caizher",
+    logo: "/suppliers/tita-cai-danos.jpg",
+  },
+  {
+    name: "Tita Khanay Aquino",
+    roles: ["Guest Souvenirs"],
+    note: "Warmest regards and sincere thanks",
+    facebook: "https://www.facebook.com/arlene0725",
+    logo: "/suppliers/tita-khanay-aquino.jpg",
+  },
+  {
+    name: "Tito Rodel Formaran",
+    roles: ["18 Dance Serenade"],
+    note: "With appreciation and warmest wishes",
+    facebook: "https://www.facebook.com/rodel.girard.formaran.2024",
+    logo: "/suppliers/tito-rodel-formaran.jpg",
+  },
+];

@@ -5,6 +5,7 @@ import EventDetails from "@/components/EventDetails";
 import VenueMap from "@/components/VenueMap";
 import Eighteens from "@/components/Eighteens";
 import Gallery from "@/components/Gallery";
+import Suppliers from "@/components/Suppliers";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
         <VenueMap />
         <Eighteens />
         <Gallery />
+        <Suppliers />
       </main>
       <Footer />
     </>
