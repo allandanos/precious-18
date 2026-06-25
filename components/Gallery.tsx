@@ -410,20 +410,10 @@ function NavArrow({
   return (
     <button
       type="button"
-      className="btn"
+      className="gallery-arrow"
       aria-label={direction === "next" ? "Next card" : "Previous card"}
       onClick={onClick}
       disabled={disabled}
-      style={{
-        padding: 0,
-        width: "clamp(2.2rem, 5vw, 3rem)",
-        height: "clamp(2.2rem, 5vw, 3rem)",
-        opacity: disabled ? 0.35 : 1,
-        cursor: disabled ? "not-allowed" : "pointer",
-        borderColor: "var(--hairline-strong)",
-        background: "color-mix(in oklch, var(--navy-700) 60%, transparent)",
-        justifyContent: "center",
-      }}
     >
       <svg
         width="14"

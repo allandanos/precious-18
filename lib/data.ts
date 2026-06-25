@@ -314,7 +314,7 @@ export interface Supplier {
 }
 
 /**
- * Vendors behind the evening, deduplicated by supplier.
+ * Suppliers behind the evening, deduplicated by supplier.
  * Logos live in /public/suppliers/. Source: suppliers.csv.
  */
 export const suppliers: Supplier[] = [
@@ -332,21 +332,21 @@ export const suppliers: Supplier[] = [
   },
   {
     name: "Abram's Events Catering Services",
-    roles: ["Caterer", "Cake", "Grazing Table"],
+    roles: ["Caterer", "Grazing Table", "Cake"],
     contact: "Ms. Hazel",
     facebook: "https://www.facebook.com/abramseventscatering",
     logo: "/suppliers/abrams-event-catering-services.jpg",
   },
   {
     name: "A and Z Events Management",
-    roles: ["Planner / Coordinator", "Host"],
+    roles: ["Coordinator", "Host"],
     contact: "Ms. Zet Cabuniag",
     facebook: "https://www.facebook.com/aandzeventsteamph",
     logo: "/suppliers/a-and-z-events-management.jpg",
   },
   {
     name: "Arabela Gown Rental Antipolo",
-    roles: ["Gowns"],
+    roles: ["Debutant's Gown"],
     facebook: "https://www.facebook.com/17162828262l161",
     logo: "/suppliers/arabella-gown-rental-antipolo.jpg",
   },
@@ -366,13 +366,13 @@ export const suppliers: Supplier[] = [
   },
   {
     name: "Anyayahan Lights and Sounds",
-    roles: ["Lights & LED Wall"],
+    roles: ["Lights & Sounds", "LED Wall"],
     facebook: "https://www.facebook.com/anyayahanLandS",
     logo: "/suppliers/anyayahan-lights-and-sounds.jpg",
   },
   {
     name: "MC PrintCrafts",
-    roles: ["DIY Souvenirs", "Mirror Selfie", "Welcome Standee"],
+    roles: ["DIY Guest Souvenirs", "Mirror Selfie", "Welcome Standee"],
     contact: "Ms. Mary Ann Joy Aday",
     facebook: "https://www.facebook.com/mcprintcraftsph",
     logo: "/suppliers/mc-print-crafts.jpg",
@@ -386,13 +386,13 @@ export const suppliers: Supplier[] = [
   },
   {
     name: "Tita Cai Daños",
-    roles: ["Prizes for Games"],
+    roles: ["Guest Souvenirs", "Prizes for Games"],
     note: "With love and thanks",
     facebook: "https://www.facebook.com/caizher",
     logo: "/suppliers/tita-cai-danos.jpg",
   },
   {
-    name: "Tita Khanay Aquino",
+    name: "Tita Arlene Aquino",
     roles: ["Guest Souvenirs"],
     note: "Warmest regards and sincere thanks",
     facebook: "https://www.facebook.com/arlene0725",

@@ -4,7 +4,7 @@ import { FloralDivider } from "./Ornament";
 
 export default function Suppliers() {
   return (
-    <section id="suppliers" className="section" aria-labelledby="suppliers-heading">
+    <section id="credits" className="section" aria-labelledby="suppliers-heading">
       <div className="shell">
         <div style={{ textAlign: "center" }}>
           <p className="eyebrow">With Gratitude</p>
