@@ -74,7 +74,6 @@ export default function Eighteens() {
                       color: "var(--silver-dim)",
                     }}
                   >
-                    The Eighteen · {meta.accent}
                   </div>
                   <p
                     style={{
