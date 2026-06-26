@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Nav from "@/components/Nav";
 import TableChecker from "@/components/TableChecker";
-import GuestList from "@/components/GuestList";
 import Footer from "@/components/Footer";
 import { FloralDivider } from "@/components/Ornament";
 
@@ -51,8 +50,6 @@ export default function FindTablePage() {
             </div>
           </div>
         </section>
-
-        <GuestList />
       </main>
       <Footer />
     </>
