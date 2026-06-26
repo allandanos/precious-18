@@ -441,21 +441,6 @@ export default function TableChecker() {
                                     }}
                                   >
                                     {tm.name}
-                                    {isYou && (
-                                      <span
-                                        style={{
-                                          marginLeft: "0.5rem",
-                                          fontFamily: "var(--font-sans)",
-                                          fontSize: "0.55rem",
-                                          letterSpacing: "0.28em",
-                                          textTransform: "uppercase",
-                                          color: "var(--champagne)",
-                                          verticalAlign: "middle",
-                                        }}
-                                      >
-                                        you
-                                      </span>
-                                    )}
                                   </span>
                                   {tm.role ? (
                                     <span

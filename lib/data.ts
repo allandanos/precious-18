@@ -40,7 +40,7 @@ export const eighteens = {
   roses: [
     "Crispin Daños",
     "Adam Sanqui",
-    "Junior Daños",
+    "JR Daños",
     "Derek Baguion",
     "Ryan Cortez",
     "John Paul Gemoto",
@@ -53,14 +53,11 @@ export const eighteens = {
     "Ken Aldric Pascual",
     "Kelvin Salazar",
     "John Cedrick Galvan",
-    "Aldrich Daños",
-    "Ace Daños",
+    "Pierre Aldrich Daños",
+    "Prince Ace Daños",
     "Allan Daños",
   ],
   candles: [
-    "Katelyn Daños",
-    "Jade Daños",
-    "Joy Daños",
     "Angela Venancio",
     "Angeline Aquino",
     "Arriana Illang",
@@ -69,6 +66,9 @@ export const eighteens = {
     "Nicole Ugaban",
     "Angelyka Zarate",
     "Angela Joy C. Moises",
+    "Christine Joy Daños",
+    "Katelyn Daños",
+    "Charmaine Jade Daños",
     "Christen Jiecy J. Ciriaco",
     "Audrey Kathleen M. Monsod",
     "Yleina Fernandez",
@@ -76,6 +76,26 @@ export const eighteens = {
     "Mira Angel H. Maquirang",
     "Irene Grace Daños",
     "Felicia Abrio",
+  ],
+  treasures: [
+    "Carhen Daños",
+    "Creaza Daños",
+    "Zairah Daños",
+    "Jan Bernadette A. Caidoc",
+    "Buena Montalbo",
+    "Antonette Malibiran",
+    "Sheeley Gem Torres",
+    "Christine Ebalang",
+    "Alj Dagala",
+    "Gladys Gamis",
+    "Louiela Salvino",
+    "Dianne Asiao-Peralta",
+    "Gemma Jalgalado",
+    "Jonellen Araneta",
+    "Ranyl Ong Eng",
+    "Arlene Aquino",
+    "Eugenia Daños",
+    "Brian Tan Seng",
   ],
   bills: [
     "Maureen Eva Venancio",
@@ -96,26 +116,6 @@ export const eighteens = {
     "Chin Daños",
     "Josie Daños",
     "Karen Tagalog",
-  ],
-  treasures: [
-    "Eugenia Daños",
-    "Brian Tan Seng",
-    "Christine Ebalang",
-    "Sheeley Gem Torres",
-    "Carhen Daños",
-    "Creaza Daños",
-    "Zairah Daños",
-    "Antonette Malibiran",
-    "Buena Montalbo",
-    "Louiela Salvino",
-    "Arlene Aquino",
-    "Jan Bernadette A. Caidoc",
-    "Alj Dagala",
-    "Jonellen Araneta",
-    "Gemma Jalgalado",
-    "Dianne Asiao-Peralta",
-    "Ranyl Ong Eng",
-    "Gladys Gamis",
   ],
 } as const;
 
@@ -155,8 +155,8 @@ export const guests: Guest[] = [
   // VIP 2
   { name: "Allan Daños", table: "VIP 2", role: "Roses" },
   { name: "Annabel Daños", table: "VIP 2", role: null },
-  { name: "Ace Daños", table: "VIP 2", role: "Roses" },
-  { name: "Aldrich Daños", table: "VIP 2", role: "Roses" },
+  { name: "Prince Ace Daños", table: "VIP 2", role: "Roses" },
+  { name: "Pierre Aldrich Daños", table: "VIP 2", role: "Roses" },
   { name: "Eugenia Daños", table: "VIP 2", role: "Treasures" },
   { name: "Crispin Daños", table: "VIP 2", role: "Roses" },
   { name: "Irene Grace Daños", table: "VIP 2", role: "Candles" },
@@ -235,10 +235,10 @@ export const guests: Guest[] = [
   { name: "Laiza Basa", table: "Table 6", role: "Bills" },
 
   // Table 7
-  { name: "Joy Daños", table: "Table 7", role: "Candles" },
-  { name: "Jade Daños", table: "Table 7", role: "Candles" },
+  { name: "Christine Joy Daños", table: "Table 7", role: "Candles" },
+  { name: "Charmaine Jade Daños", table: "Table 7", role: "Candles" },
   { name: "Katelyn Daños", table: "Table 7", role: "Candles" },
-  { name: "Junior Daños", table: "Table 7", role: "Roses" },
+  { name: "JR Daños", table: "Table 7", role: "Roses" },
   { name: "Ryan Cortez", table: "Table 7", role: "Roses" },
   { name: "Vincent Cortez", table: "Table 7", role: null },
   { name: "John Paul Gemoto", table: "Table 7", role: "Roses" },
@@ -384,6 +384,14 @@ export const suppliers: Supplier[] = [
     facebook: "https://www.facebook.com/camphotoboothservices",
     logo: "/suppliers/cam-photobooth-services.jpg",
   },
+  {
+    name: "Lovie Pascual's Flower Shop",
+    roles: ["18 Roses & Bouquet"],
+    contact: "Sir Mark Angelo B.",
+    facebook: "https://www.facebook.com/loviepascualsflowershop",
+    logo: "/suppliers/lovie-pascuals-flower-shop.png",
+  },
+  
 ];
 
 export interface SpecialThanksPerson {
@@ -461,24 +469,5 @@ export const specialThanks: SpecialThanksPerson[] = [
     photo: "/special-thanks/tita-irene-grace-danos.jpg",
     note: "With cheerful thanks",
     facebook: "https://www.facebook.com/igdanos",
-  },
-];
-
-export interface OpenSponsorship {
-  /** What is still needed (e.g. "Lechon"). */
-  item: string;
-  /** Brief call to action / status. */
-  note: string;
-}
-
-/** Items still open for sponsorship, rendered as a call-to-action callout. */
-export const openSponsorships: OpenSponsorship[] = [
-  {
-    item: "Lechon",
-    note: "Still accepting sponsors — message the family if you'd like to help.",
-  },
-  {
-    item: "Mobile Bar",
-    note: "Still accepting sponsors — message the family if you'd like to help.",
   },
 ];
