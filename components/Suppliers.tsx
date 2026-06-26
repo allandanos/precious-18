@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { suppliers, specialThanks } from "@/lib/data";
+import { suppliers, specialThanks, openSponsorships } from "@/lib/data";
 import { FloralDivider } from "./Ornament";
 
 export default function Suppliers() {
@@ -181,13 +181,22 @@ export default function Suppliers() {
               <li key={p.name}>
                 <article className="special-thanks-card">
                   <div className="special-thanks-card__portrait">
-                    <Image
-                      src={p.photo}
-                      alt={p.name}
-                      fill
-                      sizes="(max-width: 768px) 100vw, 33vw"
-                      style={{ objectFit: "cover" }}
-                    />
+                    {p.photo ? (
+                      <Image
+                        src={p.photo}
+                        alt={p.name}
+                        fill
+                        sizes="(max-width: 768px) 100vw, 33vw"
+                        style={{ objectFit: "cover" }}
+                      />
+                    ) : (
+                      <span
+                        aria-hidden
+                        className="special-thanks-card__monogram"
+                      >
+                        {p.name.split(" ")[1]?.charAt(0) ?? p.name.charAt(0)}
+                      </span>
+                    )}
                     <div
                       aria-hidden
                       className="special-thanks-card__veil"
@@ -237,6 +246,23 @@ export default function Suppliers() {
               </li>
             ))}
           </ul>
+
+          {openSponsorships.length > 0 && (
+            <div className="open-sponsorships">
+              <p className="open-sponsorships__eyebrow">Still Accepting</p>
+              <ul
+                className="open-sponsorships__list"
+                style={{ listStyle: "none", padding: 0, margin: 0 }}
+              >
+                {openSponsorships.map((s) => (
+                  <li key={s.item} className="open-sponsorships__row">
+                    <span className="open-sponsorships__item">{s.item}</span>
+                    <span className="open-sponsorships__note">{s.note}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
         </div>
       </div>
 
@@ -318,18 +344,23 @@ export default function Suppliers() {
           border-top: var(--hairline);
         }
         .special-thanks-grid {
-          display: grid;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
           gap: clamp(1rem, 2vw, 1.5rem);
-          grid-template-columns: 1fr;
+        }
+        .special-thanks-grid > li {
+          width: 100%;
+          min-width: 0;
         }
         @media (min-width: 640px) {
-          .special-thanks-grid {
-            grid-template-columns: repeat(2, minmax(0, 1fr));
+          .special-thanks-grid > li {
+            width: calc((100% - clamp(1rem, 2vw, 1.5rem)) / 2);
           }
         }
         @media (min-width: 1024px) {
-          .special-thanks-grid {
-            grid-template-columns: repeat(3, minmax(0, 1fr));
+          .special-thanks-grid > li {
+            width: calc((100% - 2 * clamp(1rem, 2vw, 1.5rem)) / 3);
           }
         }
         .special-thanks-card {
@@ -419,6 +450,69 @@ export default function Suppliers() {
         .special-thanks-card__fb:hover {
           color: var(--rose-dust);
           border-top-color: color-mix(in oklch, var(--rose-dust) 55%, transparent);
+        }
+        .special-thanks-card__monogram {
+          display: block;
+          width: 100%;
+          height: 100%;
+          display: grid;
+          place-items: center;
+          font-family: var(--font-script);
+          font-size: clamp(5rem, 12vw, 7rem);
+          color: var(--champagne);
+          line-height: 1;
+          background: linear-gradient(
+            160deg,
+            color-mix(in oklch, var(--rose-dust) 22%, transparent),
+            color-mix(in oklch, var(--navy-800) 80%, transparent)
+          );
+        }
+
+        .open-sponsorships {
+          margin-top: clamp(2.5rem, 2rem + 2vw, 4rem);
+          padding: clamp(1.5rem, 1rem + 2vw, 2.25rem);
+          text-align: center;
+          border: 1px dashed color-mix(in oklch, var(--rose-dust) 50%, transparent);
+          border-radius: var(--radius-card);
+          background: linear-gradient(
+            180deg,
+            color-mix(in oklch, var(--rose-dust) 8%, transparent),
+            transparent
+          );
+        }
+        .open-sponsorships__eyebrow {
+          font-family: var(--font-sans);
+          font-size: 0.62rem;
+          font-weight: 500;
+          letter-spacing: 0.42em;
+          text-transform: uppercase;
+          color: var(--rose-dust);
+          margin: 0;
+        }
+        .open-sponsorships__list {
+          margin-top: 1rem;
+          display: grid;
+          gap: 1rem;
+        }
+        .open-sponsorships__row {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 0.3rem;
+        }
+        .open-sponsorships__item {
+          font-family: var(--font-display);
+          font-style: italic;
+          font-size: clamp(1.6rem, 1.2rem + 1.5vw, 2.2rem);
+          color: var(--ivory);
+          line-height: 1;
+        }
+        .open-sponsorships__note {
+          font-family: var(--font-serif);
+          font-style: italic;
+          font-size: 0.95rem;
+          color: var(--ink-muted-on-navy);
+          max-width: 46ch;
         }
       `}</style>
     </section>

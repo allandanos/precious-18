@@ -393,8 +393,8 @@ export interface SpecialThanksPerson {
   gift: string;
   /** Relationship to the debutante / family. */
   relation: string;
-  /** Portrait photo in /public/suppliers/. */
-  photo: string;
+  /** Portrait photo in /public/special-thanks/. Omit to render a script monogram. */
+  photo?: string;
   /** Facebook page */
   facebook?: string;
   /** Optional short dedication line. */
@@ -408,23 +408,23 @@ export interface SpecialThanksPerson {
 export const specialThanks: SpecialThanksPerson[] = [
   {
     name: "Tita Cai Daños",
-    gift: "Guest Souvenirs & Game Prizes",
+    gift: "Prizes for Games",
     relation: "Family",
     photo: "/special-thanks/tita-cai-danos.jpg",
     note: "With love and thanks",
-    facebook: "https://www.facebook.com/caizher"
+    facebook: "https://www.facebook.com/caizher",
   },
   {
     name: "Tita Arlene Aquino",
-    gift: "Guest Souvenirs",
+    gift: "Guest Souvenir",
     relation: "Family Friend",
     photo: "/special-thanks/tita-arlene-aquino.jpg",
     note: "Warmest regards and sincere thanks",
-    facebook: "https://www.facebook.com/arlene0725"
+    facebook: "https://www.facebook.com/arlene0725",
   },
   {
-    name: "Tito Ranyl Ong Eng",
-    gift: "Guest Souvenirs Preparations",
+    name: "Tito Ranyl One Eng",
+    gift: "Guest Souvenir Preparations",
     relation: "Family Friend",
     photo: "/special-thanks/tito-ranyl-ong-eng.jpg",
     note: "With heartfelt thanks",
@@ -432,7 +432,7 @@ export const specialThanks: SpecialThanksPerson[] = [
   },
   {
     name: "Tita Tine Ebalang",
-    gift: "Guest Souvenirs Preparations",
+    gift: "Guest Souvenir Preparations",
     relation: "Family Friend",
     photo: "/special-thanks/tita-tine-ebalang.jpg",
     note: "With gratitude for your hands",
@@ -440,7 +440,7 @@ export const specialThanks: SpecialThanksPerson[] = [
   },
   {
     name: "Tita Lhen Araneta",
-    gift: "Guest Souvenirs Preparations",
+    gift: "Guest Souvenir Preparations",
     relation: "Family Friend",
     photo: "/special-thanks/tita-lhen-araneta.jpg",
     note: "With deepest appreciation",
@@ -453,5 +453,32 @@ export const specialThanks: SpecialThanksPerson[] = [
     photo: "/special-thanks/tito-rodel-formaran.jpg",
     note: "For the serenade, our warmest thanks",
     facebook: "https://www.facebook.com/rodel.girard.formaran.2024",
+  },
+  {
+    name: "Tita Irene Grace Daños",
+    gift: "Photobooth Sponsor",
+    relation: "Family",
+    photo: "/special-thanks/tita-irene-grace-danos.jpg",
+    note: "With cheerful thanks",
+    facebook: "https://www.facebook.com/igdanos",
+  },
+];
+
+export interface OpenSponsorship {
+  /** What is still needed (e.g. "Lechon"). */
+  item: string;
+  /** Brief call to action / status. */
+  note: string;
+}
+
+/** Items still open for sponsorship, rendered as a call-to-action callout. */
+export const openSponsorships: OpenSponsorship[] = [
+  {
+    item: "Lechon",
+    note: "Still accepting sponsors — message the family if you'd like to help.",
+  },
+  {
+    item: "Mobile Bar",
+    note: "Still accepting sponsors — message the family if you'd like to help.",
   },
 ];

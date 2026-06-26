@@ -162,6 +162,7 @@ export default function TableChecker() {
               display: "flex",
               gap: "0.8rem",
               flexWrap: "wrap",
+              justifyContent: "center",
             }}
           >
             <button type="submit" className="btn btn--solid">

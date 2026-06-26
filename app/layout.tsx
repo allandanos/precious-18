@@ -1,7 +1,18 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://precious-18.vercel.app";
+
+const socialImage = {
+  url: "/invites/main.jpg",
+  width: 2048,
+  height: 3072,
+  alt: "Precious Allena's debut invitation — navy, silver, and ivory",
+  type: "image/jpeg",
+};
+
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: "Precious Allena — A Decade and Eight · 4 July 2026",
   description:
     "You are cordially invited to the debut of Precious Allena on the fourth of July, two thousand twenty-six, at L'Aquinum Garden, Antipolo.",
@@ -10,6 +21,15 @@ export const metadata: Metadata = {
     description:
       "4 July 2026 · 4:00 PM · L'Aquinum Garden, Antipolo. Find your table, count down the evening, and join us.",
     type: "website",
+    siteName: "Precious Allena · A Decade and Eight",
+    images: [socialImage],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Precious Allena — A Decade and Eight",
+    description:
+      "4 July 2026 · 4:00 PM · L'Aquinum Garden, Antipolo. Find your table, count down the evening, and join us.",
+    images: [socialImage],
   },
 };
 
