@@ -4,10 +4,10 @@ import "./globals.css";
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://precious-18.vercel.app";
 
 const socialImage = {
-  url: "/invites/main.jpg",
-  width: 2048,
-  height: 3072,
-  alt: "Precious Allena's debut invitation — navy, silver, and ivory",
+  url: "/meta-preview.jpg",
+  width: 1731,
+  height: 909,
+  alt: "Precious Allena's debut — 4 July 2026 · L'Aquinum Garden, Antipolo",
   type: "image/jpeg",
 };
 
