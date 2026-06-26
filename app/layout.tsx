@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://precious-18.vercel.app";
@@ -57,6 +58,7 @@ export default function RootLayout({
       <body>
         <div className="atmosphere" aria-hidden />
         {children}
+        <Analytics />
       </body>
     </html>
   );
