@@ -384,25 +384,74 @@ export const suppliers: Supplier[] = [
     facebook: "https://www.facebook.com/camphotoboothservices",
     logo: "/suppliers/cam-photobooth-services.jpg",
   },
+];
+
+export interface SpecialThanksPerson {
+  /** Display name (form of address included). */
+  name: string;
+  /** Short label describing their gift or contribution. */
+  gift: string;
+  /** Relationship to the debutante / family. */
+  relation: string;
+  /** Portrait photo in /public/suppliers/. */
+  photo: string;
+  /** Facebook page */
+  facebook?: string;
+  /** Optional short dedication line. */
+  note?: string;
+}
+
+/**
+ * Family and friends whose contributions were gifts of the heart,
+ * not vendor engagements. Displayed separately from the supplier grid.
+ */
+export const specialThanks: SpecialThanksPerson[] = [
   {
     name: "Tita Cai Daños",
-    roles: ["Guest Souvenirs", "Prizes for Games"],
+    gift: "Guest Souvenirs & Game Prizes",
+    relation: "Family",
+    photo: "/special-thanks/tita-cai-danos.jpg",
     note: "With love and thanks",
-    facebook: "https://www.facebook.com/caizher",
-    logo: "/suppliers/tita-cai-danos.jpg",
+    facebook: "https://www.facebook.com/caizher"
   },
   {
     name: "Tita Arlene Aquino",
-    roles: ["Guest Souvenirs"],
+    gift: "Guest Souvenirs",
+    relation: "Family Friend",
+    photo: "/special-thanks/tita-arlene-aquino.jpg",
     note: "Warmest regards and sincere thanks",
-    facebook: "https://www.facebook.com/arlene0725",
-    logo: "/suppliers/tita-khanay-aquino.jpg",
+    facebook: "https://www.facebook.com/arlene0725"
+  },
+  {
+    name: "Tito Ranyl Ong Eng",
+    gift: "Guest Souvenirs Preparations",
+    relation: "Family Friend",
+    photo: "/special-thanks/tito-ranyl-ong-eng.jpg",
+    note: "With heartfelt thanks",
+    facebook: "https://www.facebook.com/lynar.ongeng",
+  },
+  {
+    name: "Tita Tine Ebalang",
+    gift: "Guest Souvenirs Preparations",
+    relation: "Family Friend",
+    photo: "/special-thanks/tita-tine-ebalang.jpg",
+    note: "With gratitude for your hands",
+    facebook: "https://www.facebook.com/xuebrey20",
+  },
+  {
+    name: "Tita Lhen Araneta",
+    gift: "Guest Souvenirs Preparations",
+    relation: "Family Friend",
+    photo: "/special-thanks/tita-lhen-araneta.jpg",
+    note: "With deepest appreciation",
+    facebook: "https://www.facebook.com/LHENSDIVI.ITEMS",
   },
   {
     name: "Tito Rodel Formaran",
-    roles: ["18 Dance Serenade"],
-    note: "With appreciation and warmest wishes",
+    gift: "18 Dance Serenade",
+    relation: "Family Friend",
+    photo: "/special-thanks/tito-rodel-formaran.jpg",
+    note: "For the serenade, our warmest thanks",
     facebook: "https://www.facebook.com/rodel.girard.formaran.2024",
-    logo: "/suppliers/tito-rodel-formaran.jpg",
   },
 ];
