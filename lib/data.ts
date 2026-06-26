@@ -416,7 +416,7 @@ export interface SpecialThanksPerson {
 export const specialThanks: SpecialThanksPerson[] = [
   {
     name: "Tita Cai Daños",
-    gift: "Prizes for Games",
+    gift: "Prizes for Games & Guest Souvenirs",
     relation: "Family",
     photo: "/special-thanks/tita-cai-danos.jpg",
     note: "With love and thanks",
@@ -424,7 +424,7 @@ export const specialThanks: SpecialThanksPerson[] = [
   },
   {
     name: "Tita Arlene Aquino",
-    gift: "Guest Souvenir",
+    gift: "Guest Souvenirs",
     relation: "Family Friend",
     photo: "/special-thanks/tita-arlene-aquino.jpg",
     note: "Warmest regards and sincere thanks",
