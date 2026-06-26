@@ -8,7 +8,7 @@ const links = [
   { href: "/#venue", label: "Venue" },
   { href: "/#eighteens", label: "The 18s" },
   { href: "/#gallery", label: "Gallery" },
-  { href: "/#credits", label: "Credits" },
+  { href: "/#acknowledgments", label: "Acknowledgments" },
   { href: "/find-table", label: "Find Your Table" },
 ];
 
