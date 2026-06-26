@@ -32,7 +32,7 @@ export const event = {
     mapsQuery: "L'Aquinum Garden, Antipolo, Rizal",
     mapsLink: "https://www.google.com/maps/search/?api=1&query=L%27Aquinum%20Garden%20Antipolo",
   },
-  dressCode: "Evening Attire · Powder Blue, Soft Grey, Off-White",
+  dressCode: "Powder Blue, Soft Grey, Off-White",
   hostLine: "With love from Mommy & Daddy, Ace & Aldrich, and the entire Daños family & all our friends",
 } as const;
 
@@ -257,7 +257,7 @@ export const guests: Guest[] = [
   // Table 9 — 18 Treasures cluster
   { name: "Alj Dagala", table: "Table 9", role: "Treasures" },
   { name: "Jonellen Araneta", table: "Table 9", role: "Treasures" },
-  { name: "Frank Lalangan", table: "Table 9", role: null },
+  { name: "Franklin Lalangan", table: "Table 9", role: null },
   { name: "Gemma Jalgalado", table: "Table 9", role: "Treasures" },
   { name: "Dianne Asiao-Peralta", table: "Table 9", role: "Treasures" },
   { name: "Ranyl Ong Eng", table: "Table 9", role: "Treasures" },
