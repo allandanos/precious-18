@@ -104,7 +104,7 @@ export const eighteens = {
     "Sheeley Gem Torres",
     "Carhen Daños",
     "Creaza Daños",
-    "Zaira Daños",
+    "Zairah Daños",
     "Antonette Malibiran",
     "Buena Montalbo",
     "Louiela Salvino",
@@ -183,7 +183,7 @@ export const guests: Guest[] = [
   { name: "Kalel Daños", table: "Table 1", role: null },
   { name: "Chin Daños", table: "Table 1", role: "Bills" },
   { name: "Katherine Kaye Guiang", table: "Table 1", role: null },
-  { name: "Zaira Daños", table: "Table 1", role: "Treasures" },
+  { name: "Zairah Daños", table: "Table 1", role: "Treasures" },
   { name: "Karah Daños", table: "Table 1", role: null },
 
   // Table 2
@@ -226,7 +226,7 @@ export const guests: Guest[] = [
 
   // Table 6 — Family elders
   { name: "Almario Basa Jr.", table: "Table 6", role: null },
-  { name: "Greg's Wife", table: "Table 6", role: null },
+  { name: "Rose Basa", table: "Table 6", role: null },
   { name: "Lolo Tony Daños", table: "Table 6", role: null },
   { name: "Lola Benny Daños", table: "Table 6", role: null },
   { name: "Allana Daños", table: "Table 6", role: null },
