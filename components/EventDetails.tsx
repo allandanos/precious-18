@@ -54,12 +54,6 @@ export default function EventDetails() {
               v2: `${event.venue.line2} · ${event.venue.city}`,
               glyph: "❧",
             },
-            {
-              k: "The Attire",
-              v: event.dressCode,
-              v2: "Evening Attire",
-              glyph: "❀",
-            },
           ].map((c) => (
             <article key={c.k} className="surface">
               <div

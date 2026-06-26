@@ -2,6 +2,7 @@ import Nav from "@/components/Nav";
 import Hero from "@/components/Hero";
 import Countdown from "@/components/Countdown";
 import EventDetails from "@/components/EventDetails";
+import DressCodeLandscape from "@/components/DressCodeLandscape";
 import VenueMap from "@/components/VenueMap";
 import Eighteens from "@/components/Eighteens";
 import Gallery from "@/components/Gallery";
@@ -16,6 +17,7 @@ export default function Home() {
         <Hero />
         <Countdown />
         <EventDetails />
+        <DressCodeLandscape />
         <VenueMap />
         <Eighteens />
         <Gallery />
