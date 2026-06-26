@@ -46,7 +46,7 @@ const cards: Card[] = [
     src: "/invites/dress.jpg",
     alt: "Dress and attire card",
     title: "Dress & Attire",
-    sub: "Garden formal · navy, silver, ivory",
+    sub: "Evening Attire · Powder Blue, Soft Grey, Off-White",
   },
   {
     src: "/invites/map.jpg",

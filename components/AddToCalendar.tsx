@@ -36,7 +36,7 @@ function buildICS(): string {
     `DTSTART:${toICS(start)}`,
     `DTEND:${toICS(end)}`,
     `SUMMARY:Precious Allena — A Decade and Eight`,
-    `DESCRIPTION:The debut of Precious Allena. Garden formal · Navy, silver, ivory.`,
+    `DESCRIPTION:The debut of Precious Allena. Evening Attire · Powder Blue, Soft Grey, Off-White.`,
     `LOCATION:${event.venue.name}, ${event.venue.line2}, ${event.venue.city}`,
     "END:VEVENT",
     "END:VCALENDAR",
@@ -56,7 +56,7 @@ function googleUrl(): string {
     text: "Precious Allena — A Decade and Eight",
     dates: `${fmt(start)}/${fmt(end)}`,
     details:
-      "The debut of Precious Allena. Garden formal · Navy, silver, ivory.",
+      "The debut of Precious Allena. Evening Attire · Powder Blue, Soft Grey, Off-White.",
     location: `${event.venue.name}, ${event.venue.line2}, ${event.venue.city}`,
   });
   return `https://calendar.google.com/calendar/render?${params.toString()}`;

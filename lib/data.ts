@@ -32,7 +32,7 @@ export const event = {
     mapsQuery: "L'Aquinum Garden, Antipolo, Rizal",
     mapsLink: "https://www.google.com/maps/search/?api=1&query=L%27Aquinum%20Garden%20Antipolo",
   },
-  dressCode: "Garden formal · Navy, silver, ivory",
+  dressCode: "Evening Attire · Powder Blue, Soft Grey, Off-White",
   hostLine: "With love from Mommy & Daddy, Ace & Aldrich, and the entire Daños family & all our friends",
 } as const;
 

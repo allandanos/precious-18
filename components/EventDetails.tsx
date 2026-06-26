@@ -57,7 +57,7 @@ export default function EventDetails() {
             {
               k: "The Attire",
               v: event.dressCode,
-              v2: "Garden formal",
+              v2: "Evening Attire",
               glyph: "❀",
             },
           ].map((c) => (
