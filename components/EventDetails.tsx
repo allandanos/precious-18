@@ -40,7 +40,7 @@ export default function EventDetails() {
               k: "The Date",
               v: event.dateLong,
               v2: event.dateYear,
-              glyph: "IV · VII",
+              glyph: "July · 04",
             },
             {
               k: "The Hour",

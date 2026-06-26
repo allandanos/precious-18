@@ -5,6 +5,9 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { guests } from "@/lib/data";
 import { findGuests } from "@/lib/search";
 
+/** Circled numerals ❶..❻ for ordinal display (limit is 6 results). */
+const ORDINALS = ["❶", "❷", "❸", "❹", "❺", "❻"];
+
 const roleLabel: Record<string, string> = {
   Roses: "an Eighteen Rose",
   Candles: "an Eighteen Candle",
@@ -272,7 +275,7 @@ export default function TableChecker() {
                             minWidth: "2.5rem",
                           }}
                         >
-                          ❶
+                          {ORDINALS[idx] ?? idx + 1}
                         </div>
                         <div>
                           <div

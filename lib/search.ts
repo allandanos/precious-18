@@ -45,9 +45,11 @@ export function findGuests(query: string, limit = 6): Match[] {
         hits++;
         continue;
       }
-      // Prefix match — "all" matches "allan".
+      // Prefix match — "all" matches "allan". Require ≥3 chars on both
+      // sides so single-letter initial tokens (B., A., etc.) can't expand
+      // into unrelated names ("brian" must not match "Juhn Michael B.").
       for (const gt of gTokens) {
-        if (gt.startsWith(t) || t.startsWith(gt)) {
+        if (t.length >= 3 && gt.length >= 3 && (gt.startsWith(t) || t.startsWith(gt))) {
           hits += 0.85;
           break;
         }
