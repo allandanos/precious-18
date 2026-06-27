@@ -15,18 +15,7 @@ export default function DressCodeLandscape() {
       aria-labelledby="attire-heading"
     >
       <div className="shell">
-        <div className="dress-code-landscape">
-          <figure className="dress-code-landscape__figure">
-            <Image
-              src="/invites/dress-code.jpg"
-              alt="An evening attire ensemble in powder blue, soft grey, and off-white"
-              fill
-              priority
-              sizes="(max-width: 800px) 100vw, 60vw"
-              style={{ objectFit: "cover" }}
-            />
-          </figure>
-          <div className="dress-code-landscape__body">
+        <div style={{ textAlign: "center" }}>
             <p className="eyebrow">The Attire</p>
             <h2
               id="attire-heading"
@@ -40,11 +29,37 @@ export default function DressCodeLandscape() {
               Powder Blue, Soft Grey, Off-White
             </h2>
             <FloralDivider />
+        </div>
+        
+        <div className="dress-code-landscape">
+          <figure className="dress-code-landscape__figure">
+            <Image
+              src="/invites/dress-code.jpg"
+              alt="An evening attire ensemble in powder blue, soft grey, and off-white"
+              fill
+              priority
+              sizes="(max-width: 800px) 100vw, 60vw"
+              style={{ objectFit: "cover" }}
+            />
+          </figure>
+          <div className="dress-code-landscape__body">
             <p className="lede" style={{ maxWidth: "42ch" }}>
               Evening attire in the debut's palette — comfortable for the
               air-conditioned programme inside Bianco Hall, with cocktails,
               a grazing table, and the photobooth spilling out into the garden.
             </p>
+            <ul className="dress-code-palette">
+              {palette.map((p) => (
+                <li key={p.name}>
+                  <span
+                    aria-hidden
+                    className="dress-code-palette__chip"
+                    style={{ background: p.color }}
+                  />
+                  {p.name}
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </div>

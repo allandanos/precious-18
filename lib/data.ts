@@ -38,7 +38,7 @@ export const event = {
 
 export const eighteens = {
   roses: [
-    "Crispin Daños",
+    "Lolo Crispin Daños",
     "Adam Sanqui",
     "JR Daños",
     "Derek Baguion",
@@ -94,7 +94,7 @@ export const eighteens = {
     "Jonellen Araneta",
     "Ranyl Ong Eng",
     "Arlene Aquino",
-    "Eugenia Daños",
+    "Lola Gie Daños",
     "Brian Tan Seng",
   ],
   bills: [
@@ -157,8 +157,8 @@ export const guests: Guest[] = [
   { name: "Annabel Daños", table: "VIP 2", role: null },
   { name: "Prince Ace Daños", table: "VIP 2", role: "Roses" },
   { name: "Pierre Aldrich Daños", table: "VIP 2", role: "Roses" },
-  { name: "Eugenia Daños", table: "VIP 2", role: "Treasures" },
-  { name: "Crispin Daños", table: "VIP 2", role: "Roses" },
+  { name: "Lola Gie Daños", table: "VIP 2", role: "Treasures" },
+  { name: "Lolo Crispin Daños", table: "VIP 2", role: "Roses" },
   { name: "Irene Grace Daños", table: "VIP 2", role: "Candles" },
   { name: "Adam Sanqui", table: "VIP 2", role: "Roses" },
   { name: "Christian Daños", table: "VIP 2", role: null },
@@ -225,14 +225,14 @@ export const guests: Guest[] = [
   { name: "Kelvin Salazar", table: "Table 5", role: "Roses" },
 
   // Table 6 — Family elders
-  { name: "Almario Basa Jr.", table: "Table 6", role: null },
-  { name: "Rose Basa", table: "Table 6", role: null },
-  { name: "Lolo Tony Daños", table: "Table 6", role: null },
-  { name: "Lola Benny Daños", table: "Table 6", role: null },
-  { name: "Allana Daños", table: "Table 6", role: null },
+  { name: "Lola Baby Gemoto", table: "Table 6", role: null },
   { name: "Lola Minda Cortez", table: "Table 6", role: null },
   { name: "Lola Lorna Basa", table: "Table 6", role: null },
   { name: "Laiza Basa", table: "Table 6", role: "Bills" },
+  { name: "Almario Basa Jr.", table: "Table 6", role: null },
+  { name: "Lolo Tony Daños", table: "Table 6", role: null },
+  { name: "Lola Benny Daños", table: "Table 6", role: null },
+  { name: "Allana Daños", table: "Table 6", role: null },
 
   // Table 7
   { name: "Christine Joy Daños", table: "Table 7", role: "Candles" },
