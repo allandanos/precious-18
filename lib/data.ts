@@ -204,6 +204,7 @@ export const guests: Guest[] = [
   { name: "Karen Tagalog", table: "Table 3", role: "Bills" },
   { name: "Maria Jennilyn Vergara", table: "Table 3", role: null },
   { name: "Jovern Marie Vergara", table: "Table 3", role: null },
+  { name: "Ernie M. Basister", table: "Table 3", role: null },
 
   // Table 4 — 18 Candles
   { name: "Angela Venancio", table: "Table 4", role: "Candles" },
@@ -223,10 +224,9 @@ export const guests: Guest[] = [
   { name: "Ashley Reigne C. Reptin", table: "Table 5", role: null },
   { name: "John Cedrick Galvan", table: "Table 5", role: "Roses" },
   { name: "Kelvin Salazar", table: "Table 5", role: "Roses" },
+  { name: "Ryan Cortez", table: "Table 5", role: "Roses" },
 
   // Table 6 — Family elders
-  { name: "Lola Baby Gemoto", table: "Table 6", role: null },
-  { name: "Lola Minda Cortez", table: "Table 6", role: null },
   { name: "Lola Lorna Basa", table: "Table 6", role: null },
   { name: "Laiza Basa", table: "Table 6", role: "Bills" },
   { name: "Almario Basa Jr.", table: "Table 6", role: null },
@@ -239,7 +239,7 @@ export const guests: Guest[] = [
   { name: "Charmaine Jade Daños", table: "Table 7", role: "Candles" },
   { name: "Katelyn Daños", table: "Table 7", role: "Candles" },
   { name: "JR Daños", table: "Table 7", role: "Roses" },
-  { name: "Ryan Cortez", table: "Table 7", role: "Roses" },
+  { name: "Lola Minda Cortez", table: "Table 7", role: null },
   { name: "Vincent Cortez", table: "Table 7", role: null },
   { name: "John Paul Gemoto", table: "Table 7", role: "Roses" },
   { name: "Andrei Gemoto", table: "Table 7", role: null },
@@ -286,21 +286,20 @@ export const guests: Guest[] = [
 
   // Table 12 — 18 Bills cluster
   { name: "Jack Sarabia", table: "Table 12", role: "Bills" },
-  { name: "Luz Ugaban", table: "Table 12", role: "Bills" },
   { name: "Sheryl Pascual", table: "Table 12", role: "Bills" },
-  { name: "Vanesa Diamante", table: "Table 12", role: "Bills" },
-  { name: "Avah Pascual", table: "Table 12", role: null },
-  { name: "Amarah Diamante", table: "Table 12", role: null },
-  { name: "Allen Miel Diamante", table: "Table 12", role: "Roses" },
   { name: "Ken Aldric Pascual", table: "Table 12", role: "Roses" },
+  { name: "Avah Pascual", table: "Table 12", role: null },
+  { name: "Vanesa Diamante", table: "Table 12", role: "Bills" },
+  { name: "Allen Miel Diamante", table: "Table 12", role: "Roses" },
+  { name: "Amarah Diamante", table: "Table 12", role: null },
 
   // Table 13 — 18 Bills cluster
   { name: "Maureen Eva Venancio", table: "Table 13", role: "Bills" },
-  { name: "Rico Venancio", table: "Table 13", role: null },
+  { name: "Rico Nathaniel Venancio", table: "Table 13", role: null },
   { name: "Sonia Aquino", table: "Table 13", role: "Bills" },
+  { name: "Luz Ugaban", table: "Table 13", role: "Bills" },
   { name: "Diane Gojar", table: "Table 13", role: "Bills" },
   { name: "Analyn Padilla", table: "Table 13", role: "Bills" },
-  { name: "Rico Nathaniel Venancio", table: "Table 13", role: null },
 ];
 
 export interface Supplier {
