@@ -168,13 +168,13 @@ export const guests: Guest[] = [
   { name: "Rodel Girard Formaran", table: "VIP 1", role: null },
   { name: "Marimar Lirio-Formaran", table: "VIP 1", role: null },
   { name: "Brian Tan Seng", table: "VIP 1", role: "Treasures" },
-  { name: "Leonor Tan Seng", table: "VIP 1", role: null },
-  { name: "Kuya Miguel", table: "VIP 1", role: null },
-  { name: "Christine Ebalang", table: "VIP 1", role: "Treasures" },
   { name: "Hans Christian Torres", table: "VIP 1", role: "Bills" },
   { name: "Sheeley Gem Torres", table: "VIP 1", role: "Treasures" },
   { name: "Seth Torres", table: "VIP 1", role: null },
   { name: "Haeley Torres", table: "VIP 1", role: null },
+  { name: "Christine Ebalang", table: "VIP 1", role: "Treasures" },
+  { name: "Arlene Aquino", table: "VIP 1", role: null },
+  { name: "Errol Encarnacion", table: "VIP 1", role: null },
 
   // Table 1
   { name: "Carhen Daños", table: "Table 1", role: "Treasures" },
@@ -187,14 +187,12 @@ export const guests: Guest[] = [
   { name: "Karah Daños", table: "Table 1", role: null },
 
   // Table 2
-  { name: "Errol Encarnacion", table: "Table 2", role: null },
   { name: "Richard Malibiran", table: "Table 2", role: null },
   { name: "Antonette Malibiran", table: "Table 2", role: "Treasures" },
   { name: "Erickson Leynes", table: "Table 2", role: null },
   { name: "Buena Montalbo", table: "Table 2", role: "Treasures" },
   { name: "Louiela Salvino", table: "Table 2", role: "Treasures" },
   { name: "Rey Camarquiz", table: "Table 2", role: null },
-  { name: "Arlene Aquino", table: "Table 2", role: "Treasures" },
 
   // Table 3
   { name: "Rowel Baguion", table: "Table 3", role: null },
