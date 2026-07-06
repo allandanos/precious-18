@@ -1,8 +1,13 @@
 import type { Metadata } from "next";
 import Nav from "@/components/Nav";
-import ThankYouHero from "@/components/ThankYouHero";
+import Hero from "@/components/Hero";
+import Countdown from "@/components/Countdown";
+import EventDetails from "@/components/EventDetails";
+import DressCodeLandscape from "@/components/DressCodeLandscape";
+import VenueMap from "@/components/VenueMap";
+import Eighteens from "@/components/Eighteens";
+import Gallery from "@/components/Gallery";
 import Suppliers from "@/components/Suppliers";
-import PhotosPending from "@/components/PhotosPending";
 import Footer from "@/components/Footer";
 
 const siteUrl =
@@ -10,13 +15,13 @@ const siteUrl =
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "With Gratitude — Precious Allena · A Decade and Eight",
+  title: "Precious Allena — A Decade and Eight · 4 July 2026",
   description:
-    "A heartfelt thank you to everyone who joined us on 4 July 2026 at L'Aquinum Garden, Antipolo — family, friends, and the makers behind every detail.",
+    "You are cordially invited to the debut of Precious Allena on the fourth of July, two thousand twenty-six, at L'Aquinum Garden, Antipolo.",
   openGraph: {
-    title: "With Gratitude — Precious Allena · A Decade and Eight",
+    title: "Precious Allena — A Decade and Eight",
     description:
-      "A heartfelt thank you to everyone who joined us on 4 July 2026 at L'Aquinum Garden, Antipolo.",
+      "4 July 2026 · 4:00 PM · L'Aquinum Garden, Antipolo. Find your table, count down the evening, and join us.",
     type: "website",
     siteName: "Precious Allena · A Decade and Eight",
     images: [
@@ -31,9 +36,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "With Gratitude — Precious Allena · A Decade and Eight",
+    title: "Precious Allena — A Decade and Eight",
     description:
-      "A heartfelt thank you to everyone who joined us on 4 July 2026 at L'Aquinum Garden, Antipolo.",
+      "4 July 2026 · 4:00 PM · L'Aquinum Garden, Antipolo. Find your table, count down the evening, and join us.",
     images: [
       {
         url: "/meta-preview.jpg",
@@ -46,14 +51,19 @@ export const metadata: Metadata = {
   },
 };
 
-export default function Home() {
+export default function InvitationPage() {
   return (
     <>
       <Nav />
       <main style={{ position: "relative", zIndex: 1 }}>
-        <ThankYouHero />
+        <Hero />
+        <Countdown />
+        <EventDetails />
+        <DressCodeLandscape />
+        <VenueMap />
+        <Eighteens />
+        <Gallery />
         <Suppliers />
-        <PhotosPending />
       </main>
       <Footer />
     </>

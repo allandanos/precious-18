@@ -46,7 +46,7 @@ export default function PhotosPending() {
               gap: "0.75rem",
             }}
           >
-            <Link href="/" className="btn">
+            <Link href="/invitation" className="btn">
               ← Back to the invitation
             </Link>
           </div>
