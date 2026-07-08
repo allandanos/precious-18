@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Nav from "@/components/Nav";
 import ThankYouHero from "@/components/ThankYouHero";
 import Suppliers from "@/components/Suppliers";
-import PhotosPending from "@/components/PhotosPending";
+import PhotoAlbums from "@/components/PhotoAlbums";
 import Footer from "@/components/Footer";
 
 const siteUrl =
@@ -53,7 +53,7 @@ export default function Home() {
       <main style={{ position: "relative", zIndex: 1 }}>
         <ThankYouHero />
         <Suppliers />
-        <PhotosPending />
+        <PhotoAlbums />
       </main>
       <Footer />
     </>
