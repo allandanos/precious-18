@@ -80,7 +80,7 @@ const albums: PhotoAlbum[] = [
 
 export default function PhotoAlbums() {
   return (
-    <section className="section" aria-labelledby="gallery-heading">
+    <section id="gallery" className="section" aria-labelledby="gallery-heading">
       <div className="shell">
         <div style={{ textAlign: "center" }}>
           <p className="eyebrow">Moments in Frame</p>

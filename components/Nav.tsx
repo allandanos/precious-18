@@ -4,12 +4,9 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 
 const links = [
-  { href: "/invitation#event", label: "The Evening" },
-  { href: "/invitation#attire", label: "Attire" },
-  { href: "/invitation#venue", label: "Venue" },
-  { href: "/invitation#eighteens", label: "The 18s" },
-  { href: "/invitation#gallery", label: "Gallery" },
   { href: "/#acknowledgments", label: "Acknowledgments" },
+  { href: "/#gallery", label: "Gallery" },
+  { href: "/invitation", label: "The Invitation" },
   { href: "/find-table", label: "Find Your Table" },
 ];
 
